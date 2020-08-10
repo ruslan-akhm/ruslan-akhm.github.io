@@ -1,0 +1,71 @@
+#contact{
+  background-color:#dae1ed;
+  padding:0 0 30px 0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+#contact p, #contact button{
+  font-family: 'Noto Sans', sans-serif;
+  font-size:18px;
+  color:#242227;
+  text-align:center;
+}
+#contact p{
+  margin:10px;
+}
+#contact button{
+  height:30px;
+  background-color:#dae1ed;
+  border:1px solid #242227;
+  cursor:pointer;
+}
+#contact button:hover{
+  color:#dae1ed;
+  background-color:#242227;
+}
+#form{
+  display:none;
+  margin-top:40px;
+  min-width:500px;
+  width:80%;
+}
+.send-form{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows:repeat(4, minmax(30px, auto-fit));
+  grid-column-gap:10px;
+  grid-row-gap:20px;
+}
+.send-form input, .send-form textarea{
+  font-family: 'Noto Sans', sans-serif;
+  font-size:16px;
+  border:1px solid #242227;
+  outline:none;
+  min-height:28px;
+}
+.send-form textarea{
+  max-height:500px;
+  resize: vertical;
+}
+.send-form input:focus, .send-form textarea:focus{
+  border:1px solid #1ae2ea;
+}
+.send-form #send{
+  grid-area:4/1/5/3;
+  width:200px;
+  margin:auto;
+  cursor:pointer;
+}
+.label-tags{
+  text-align:end;
+  font-family: 'Noto Sans', sans-serif;
+  font-size:16px;
+  align-self:start;
+}
+@media only screen and (max-width:800px){
+  #form{
+    width:90%;
+  } 
+}

@@ -1,0 +1,107 @@
+:root{
+  --ln-1:#73aee6;
+  --ln-2:#e673a3;
+  --ln-3:#e8b38b;
+  --ln-4:#75e67d;
+}
+#skill-box{
+  background-color:#dae1ed;
+  min-height:40vh;
+  height:100%;
+  padding:50px 0 50px 0;
+  clip-path: polygon(0 3%, 0 100%, 100% 100%,100% 0);
+  margin:0;
+  display:flex;
+  flex-direction:column;
+}
+.skill{
+  height:25%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin:20px 0 20px 0;
+  overflow-x:hidden;
+}
+.skill .svg{
+  align-self:center;
+  width:160px;
+  height:160px;
+  margin:10px;
+}
+.skill .svg img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.skill .description{
+  width:50%;
+}
+.skill .description h3{
+}
+.skill .line{
+  align-self:center;
+  margin:0 20px 0 20px;
+  width:3px;
+  height:10rem;
+  background-color:#242227;
+}
+.skill .ln-1{
+  background-color:var(--ln-1);
+}
+.skill .ln-2{
+  background-color:var(--ln-2); 
+}
+.skill .ln-3{
+  background-color:var(--ln-3);
+}
+.skill .ln-4{
+  background-color:var(--ln-4);
+}
+.skill .description h3, .skill .description p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size:28px;
+}
+.skill .description p{
+  font-size:18px;
+}
+.skill:nth-child(even) .svg{ 
+  order:3;
+}
+.skill:nth-child(even) .line{
+  order:2;
+}
+.skill:nth-child(even) .description h3, .skill:nth-child(even) .description p {
+  text-align:end;
+}
+@media only screen and (max-width:800px){
+  .skill .svg{
+    align-self:start;
+    width:40px;
+    height:40px;
+    margin:10px;
+    margin-top:0;
+  }
+  .skill .line{
+    display:none;
+  }
+  .skill .description{
+    padding:0;
+    width:85%;
+  }
+  .skill .description h3{
+    margin:0;
+  }
+  #skill-box .skill:nth-child(1) .description h3{
+    background-color:var(--ln-1);
+  }
+  #skill-box .skill:nth-child(2) .description h3{
+    background-color:var(--ln-2);
+  }
+  #skill-box .skill:nth-child(3) .description h3{
+    background-color:var(--ln-3);
+  }
+  #skill-box .skill:nth-child(4) .description h3{
+    background-color:var(--ln-4);
+  }
+}
