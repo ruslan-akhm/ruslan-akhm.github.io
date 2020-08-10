@@ -9,7 +9,7 @@ export default [
   id: "item-1",
   buttonId: "1",
   button2Id: "1a",
-  img:"https://github.com/ruslan-akhm/ruslan-akhm.github.io/blob/master/2.jpg?raw=true"
+  img:"newportfolio\src\img\2-min.jpg"
   },
   {
     number: 2,
@@ -21,7 +21,7 @@ export default [
     id:"item-2",
     buttonId:"2",
     button2Id:"2a",
-    img:"https://github.com/ruslan-akhm/ruslan-akhm.github.io/blob/master/3.jpg?raw=true"
+    img:"newportfolio\src\img\3-min.jpg"
   },
   {
     number: 3,
@@ -32,6 +32,6 @@ export default [
     id:"item-3",
     buttonId:"3",
     button2Id:"3a",
-    img:"https://github.com/ruslan-akhm/ruslan-akhm.github.io/blob/master/1.jpg?raw=true"
+    img:"newportfolio\src\img\1-min.jpg"
   }
 ]
