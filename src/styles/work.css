@@ -3,7 +3,7 @@
   min-height:60vh;
   display:flex;
   flex-direction:column;
-  justify-content:start;
+  justify-content:flex-start;
 }
 #work h3{
   text-align:center;

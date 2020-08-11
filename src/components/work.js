@@ -16,7 +16,7 @@ const Work = () => {
   const list = projects.map(item=>{
     return(
       <div className="card" key={item.number} onMouseEnter={(e)=>mouseEnter(item.id)} onMouseLeave={(e)=>mouseLeave(item.id)}>
-        <img src={item.img} />
+        <img src={item.img} alt="project-preview"/>
         <div className="project-info" >
           <div className="title">
             <h3>{item.name}</h3>
