@@ -1,3 +1,7 @@
+import socNetPageImage from '../img/2-min.jpg'
+import reservePageImage from '../img/1-min.jpg'
+import calcImage from '../img/3-min.jpg'
+
 export default [
    {
   number: 1,
@@ -7,9 +11,7 @@ export default [
   linkCode: 'https://github.com/ruslan-akhm/social-network-page',
   linkProject: 'https://appnew-test-sample.glitch.me',
   id: "item-1",
-  buttonId: "1",
-  button2Id: "1a",
-  img:"newportfolio\src\img\2-min.jpg"
+  img:socNetPageImage
   },
   {
     number: 2,
@@ -19,19 +21,15 @@ export default [
     linkCode:'https://github.com/ruslan-akhm/calculator-react',
     linkProject:'https://codepen.io/RUSLAN-AKH/full/JjPWzdp',
     id:"item-2",
-    buttonId:"2",
-    button2Id:"2a",
-    img:"newportfolio\src\img\3-min.jpg"
+    img:calcImage
   },
   {
     number: 3,
     name:'Reservation Page',
     description:'Make a reservation in theatre/cinema using interactive and visually convenient seats map. Get a unique ID for the reservation. Using ID, check or cancel reservation anytime',
     linkCode:'https://github.com/ruslan-akhm/ticket-reservation-page',
-    linkProject:'https://reservation-page-react88.glitch.me',
+    linkProject:'https://ticket-reservation-page.glitch.me',
     id:"item-3",
-    buttonId:"3",
-    button2Id:"3a",
-    img:"newportfolio\src\img\1-min.jpg"
+    img:reservePageImage
   }
 ]
