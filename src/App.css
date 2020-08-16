@@ -26,6 +26,7 @@ body::-webkit-scrollbar{
   color:white;
   font-family: 'Noto Sans', sans-serif;
   font-size:20px;
+  margin-top:50px;/* here */
 }
 
 

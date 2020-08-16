@@ -20,12 +20,12 @@ const Contact = () => {
       </p>
       <div id="form">
         <form className="send-form" method="POST" action="https://script.google.com/macros/s/AKfycbxM3itgwvArllKDNmk-KknYIf6sIWse-HcLtScT/exec">
-          <label htmlFor="name" className="label-tags">Name/Company: </label>
-          <input id="name" name="name" placeholder="Name..." />
-          <label htmlFor="message" className="label-tags">Message: </label>
-          <textarea id="message" name="message" rows="6" placeholder="Message..."></textarea>
-          <label htmlFor="email" className="label-tags">Your Email:</label>
-          <input id="email" name="email" type="email" required placeholder="your.name@email.com"/>
+          {/* <label htmlFor="name" className="label-tags">Name/Company: </label> */}
+          <input id="name" name="name" placeholder="NAME" />
+           {/* <label htmlFor="email" className="label-tags">Your Email:</label> */}
+           <input id="email" name="email" type="email" required placeholder="E-MAIL"/>
+          {/* <label htmlFor="message" className="label-tags">Message: </label> */}
+          <textarea id="message" name="message" rows="6" placeholder="MESSAGE"></textarea>
           <button id="send" type="submit">Send</button>
         </form>
       </div>
