@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "383cb3135b0642af3c2c899e13161929",
+    "revision": "a4f3db3928eeb031cbd539b8ca2759cc",
     "url": "/ruslan-akhm.github.io/index.html"
   },
   {
-    "revision": "9052f10d13f032e46968",
-    "url": "/ruslan-akhm.github.io/static/css/main.b47deeec.chunk.css"
+    "revision": "07443bbecb4ed95c5bff",
+    "url": "/ruslan-akhm.github.io/static/css/main.2d84df0b.chunk.css"
   },
   {
     "revision": "18ce885e2328eda220de",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ruslan-akhm.github.io/static/js/2.1f9a4381.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9052f10d13f032e46968",
-    "url": "/ruslan-akhm.github.io/static/js/main.640630b3.chunk.js"
+    "revision": "07443bbecb4ed95c5bff",
+    "url": "/ruslan-akhm.github.io/static/js/main.5fc82295.chunk.js"
   },
   {
     "revision": "ebfba2909bf27fa5c909",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ruslan-akhm.github.io/static/media/2-min.1dd43fa5.jpg"
   },
   {
-    "revision": "b748c3f9c7b37db78630e13938a25b33",
-    "url": "/ruslan-akhm.github.io/static/media/3-min.b748c3f9.jpg"
+    "revision": "304f3bb750d8b2260f1c8cf7326cd514",
+    "url": "/ruslan-akhm.github.io/static/media/3-min.304f3bb7.jpg"
   }
 ]);
