@@ -1,6 +1,6 @@
 import socNetPageImage from '../img/2-min.jpg'
 import reservePageImage from '../img/1-min.jpg'
-import calcImage from '../img/3-min.jpg'
+import carsImage from '../img/3-min.jpg'
 
 export default [
    {
@@ -15,13 +15,13 @@ export default [
   },
   {
     number: 2,
-    name:'Calculator',
-    description:'Calculator performs basic mathematical operations, able to handle negative numbers as well as float numbers. If 2 or more operators are entered consecutively, the operation performed is the last operator entered.',
+    name:'Polestar Clone',
+    description:'Clone of a Polestar.com webpage with animations, transitions, interactive effects and responsive design. Some of the text and non-related images were not included as this page is built mainly for representational purposes.',
     features:['Event handlers used to determine click of a button', 'Actively used state managament to update and read states during calculations', 'If 2 or more operators are entered consecutively, the operation performed is the last operator entered','Usage of Array.map to ease the buttons layout'],
-    linkCode:'https://github.com/ruslan-akhm/calculator-react',
+    linkCode:'https://polestar-clone.github.io/polestar/',
     linkProject:'https://codepen.io/RUSLAN-AKH/full/JjPWzdp',
     id:"item-2",
-    img:calcImage
+    img:carsImage
   },
   {
     number: 3,

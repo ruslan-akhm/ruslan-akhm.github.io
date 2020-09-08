@@ -6,8 +6,7 @@
   justify-content:center;
 }
 #footer ul{
-  min-width:500px;
-  width:50%;
+  width:80%;
   display:flex;
   flex-direction:row;
   justify-content:space-between;
@@ -17,6 +16,7 @@
 }
 #footer ul li{
   list-style-type:none;
+  margin:10px;
 }
 #footer ul li a{
   display:flex;
@@ -45,10 +45,17 @@
 }
 #footer p{
   color:#413e47;
+  text-align:center;
+  padding:10px;
 }
 #footer p a{
   color:#524e59;
 }
 #footer p a:hover{
   color:#6c6775;
+}
+@media only screen and (max-width:800px){
+  #footer ul{
+    justify-content:space-evenly;
+  }
 }
