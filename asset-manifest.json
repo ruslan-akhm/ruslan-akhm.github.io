@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ruslan-akhm.github.io/static/css/main.345caa3a.chunk.css",
-    "main.js": "/ruslan-akhm.github.io/static/js/main.f95b84cc.chunk.js",
-    "main.js.map": "/ruslan-akhm.github.io/static/js/main.f95b84cc.chunk.js.map",
+    "main.js": "/ruslan-akhm.github.io/static/js/main.91381f31.chunk.js",
+    "main.js.map": "/ruslan-akhm.github.io/static/js/main.91381f31.chunk.js.map",
     "runtime-main.js": "/ruslan-akhm.github.io/static/js/runtime-main.980aeaec.js",
     "runtime-main.js.map": "/ruslan-akhm.github.io/static/js/runtime-main.980aeaec.js.map",
     "static/js/2.86bf268e.chunk.js": "/ruslan-akhm.github.io/static/js/2.86bf268e.chunk.js",
     "static/js/2.86bf268e.chunk.js.map": "/ruslan-akhm.github.io/static/js/2.86bf268e.chunk.js.map",
     "index.html": "/ruslan-akhm.github.io/index.html",
-    "precache-manifest.bdf8c0b24f43da2ed7330782c5698fbc.js": "/ruslan-akhm.github.io/precache-manifest.bdf8c0b24f43da2ed7330782c5698fbc.js",
+    "precache-manifest.baf0a315e2289e65bcbad6aea769085b.js": "/ruslan-akhm.github.io/precache-manifest.baf0a315e2289e65bcbad6aea769085b.js",
     "service-worker.js": "/ruslan-akhm.github.io/service-worker.js",
     "static/css/main.345caa3a.chunk.css.map": "/ruslan-akhm.github.io/static/css/main.345caa3a.chunk.css.map",
     "static/js/2.86bf268e.chunk.js.LICENSE.txt": "/ruslan-akhm.github.io/static/js/2.86bf268e.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.980aeaec.js",
     "static/js/2.86bf268e.chunk.js",
     "static/css/main.345caa3a.chunk.css",
-    "static/js/main.f95b84cc.chunk.js"
+    "static/js/main.91381f31.chunk.js"
   ]
 }
