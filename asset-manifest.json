@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/ruslan-akhm.github.io/static/css/main.2c468869.chunk.css",
-    "main.js": "/ruslan-akhm.github.io/static/js/main.55dbc313.chunk.js",
-    "main.js.map": "/ruslan-akhm.github.io/static/js/main.55dbc313.chunk.js.map",
+    "main.css": "/ruslan-akhm.github.io/static/css/main.93294c88.chunk.css",
+    "main.js": "/ruslan-akhm.github.io/static/js/main.73a64d6b.chunk.js",
+    "main.js.map": "/ruslan-akhm.github.io/static/js/main.73a64d6b.chunk.js.map",
     "runtime-main.js": "/ruslan-akhm.github.io/static/js/runtime-main.980aeaec.js",
     "runtime-main.js.map": "/ruslan-akhm.github.io/static/js/runtime-main.980aeaec.js.map",
-    "static/js/2.86bf268e.chunk.js": "/ruslan-akhm.github.io/static/js/2.86bf268e.chunk.js",
-    "static/js/2.86bf268e.chunk.js.map": "/ruslan-akhm.github.io/static/js/2.86bf268e.chunk.js.map",
+    "static/js/2.c2c96d78.chunk.js": "/ruslan-akhm.github.io/static/js/2.c2c96d78.chunk.js",
+    "static/js/2.c2c96d78.chunk.js.map": "/ruslan-akhm.github.io/static/js/2.c2c96d78.chunk.js.map",
     "index.html": "/ruslan-akhm.github.io/index.html",
-    "precache-manifest.a9a3dec2b7a3a07b2f6435e5432c69e4.js": "/ruslan-akhm.github.io/precache-manifest.a9a3dec2b7a3a07b2f6435e5432c69e4.js",
+    "precache-manifest.ec531a9a4dc92b3ed23dd369d4e27875.js": "/ruslan-akhm.github.io/precache-manifest.ec531a9a4dc92b3ed23dd369d4e27875.js",
     "service-worker.js": "/ruslan-akhm.github.io/service-worker.js",
-    "static/css/main.2c468869.chunk.css.map": "/ruslan-akhm.github.io/static/css/main.2c468869.chunk.css.map",
-    "static/js/2.86bf268e.chunk.js.LICENSE.txt": "/ruslan-akhm.github.io/static/js/2.86bf268e.chunk.js.LICENSE.txt",
-    "static/media/1-min.jpg": "/ruslan-akhm.github.io/static/media/1-min.7f900e2b.jpg",
-    "static/media/2-min.jpg": "/ruslan-akhm.github.io/static/media/2-min.4cb580f4.jpg",
-    "static/media/3-min.jpg": "/ruslan-akhm.github.io/static/media/3-min.304f3bb7.jpg",
+    "static/css/main.93294c88.chunk.css.map": "/ruslan-akhm.github.io/static/css/main.93294c88.chunk.css.map",
+    "static/js/2.c2c96d78.chunk.js.LICENSE.txt": "/ruslan-akhm.github.io/static/js/2.c2c96d78.chunk.js.LICENSE.txt",
+    "static/media/1-min.jpg": "/ruslan-akhm.github.io/static/media/1-min.555eeb84.jpg",
+    "static/media/2-min.jpg": "/ruslan-akhm.github.io/static/media/2-min.9ae3cfa8.jpg",
+    "static/media/3-min.jpg": "/ruslan-akhm.github.io/static/media/3-min.a951caae.jpg",
+    "static/media/bg.jpg": "/ruslan-akhm.github.io/static/media/bg.450fd5ab.jpg",
+    "static/media/bulb.jpg": "/ruslan-akhm.github.io/static/media/bulb.ea6ea1ae.jpg",
+    "static/media/code.jpg": "/ruslan-akhm.github.io/static/media/code.c213f3e1.jpg",
+    "static/media/App.css": "/ruslan-akhm.github.io/static/media/footer-wrap.f24f5098.jpg",
+    "static/media/gear.jpg": "/ruslan-akhm.github.io/static/media/gear.f14cf235.jpg",
     "static/media/joke.jpg": "/ruslan-akhm.github.io/static/media/joke.b8aa2362.jpg",
-    "static/media/ruslan.jpg": "/ruslan-akhm.github.io/static/media/ruslan.07b60a05.jpg"
+    "static/media/ruslan.jpg": "/ruslan-akhm.github.io/static/media/ruslan.ff6950b1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.980aeaec.js",
-    "static/js/2.86bf268e.chunk.js",
-    "static/css/main.2c468869.chunk.css",
-    "static/js/main.55dbc313.chunk.js"
+    "static/js/2.c2c96d78.chunk.js",
+    "static/css/main.93294c88.chunk.css",
+    "static/js/main.73a64d6b.chunk.js"
   ]
 }
