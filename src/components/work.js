@@ -1,44 +1,52 @@
-import React, { useState, useEffect, useRef } from 'react';
-import projects from '../data/projects'
-import '../styles/work.css';
+import React from "react";
+import projects from "../data/projects";
+import "../styles/work.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Work = () => {
-  
-  const mouseEnter=(id)=>{
-    document.getElementById(id).style.animation="slideUp .3s";
-    document.getElementById(id).style.display="flex";
-  }
-  
-  const mouseLeave=(id)=>{
-    document.getElementById(id).style.display="none";
-  }
-  
-  const list = projects.map(item=>{
-    return(
-      <div className="card" key={item.number} onMouseEnter={(e)=>mouseEnter(item.id)} onMouseLeave={(e)=>mouseLeave(item.id)}>
-        <img src={item.img} alt="project-preview"/>
-        <div className="project-info" >
-          <div className="title">
-            <h3>{item.name}</h3>
-          </div>
-          <div id={item.id} className="text">
-            <p>{item.description}</p>
-            <a href={item.linkProject} target="_blank">OPEN</a>
-            <a href={item.linkCode} target="_blank">CODE</a>
+  let projectList = projects.map((item, index) => {
+    return (
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-in"
+        className="card"
+        key={item.number}
+      >
+        <div className="project-image">
+          <img src={item.img} alt={item.name + " project preview"} />
+        </div>
+        <div className="project-info">
+          <h2>{item.name}</h2>
+          <ul>
+            {item.features.map((feature, index) => {
+              return <li key={index}>{feature}</li>;
+            })}
+          </ul>
+          <p>{item.description}</p>
+          <div className="project-links">
+            <a
+              className={index === 1 || index === 3 ? "second" : null}
+              href={item.linkProject}
+              target="_blank"
+            >
+              View Project
+            </a>
+            <a href={item.linkCode} target="_blank">
+              View Code
+            </a>
           </div>
         </div>
       </div>
-    )
-  })
-  
+    );
+  });
   return (
     <div id="work">
-      <h3>Check out some of my previous projects</h3>
-      <div className="card-box">
-        {list}
-      </div>
+      <h1>My recent projects</h1>
+      <div className="card-box">{projectList}</div>
     </div>
-  )
-}
+  );
+};
 
 export default Work;

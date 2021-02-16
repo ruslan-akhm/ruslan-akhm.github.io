@@ -1,34 +1,33 @@
-html{
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+html {
   scroll-behavior: smooth;
-  overflow-x:hidden;
 }
-body{
-  background-color:#dae1ed;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /*   IE and Edge */ 
-  overflow-x:hidden;
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
-body::-webkit-scrollbar{
-    width:0px;
+#page {
+  background-color: #f0f6ff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-#page{
-  background-color:#242227;
-  width:100%;
-  display:flex;
-  flex-direction:column;
+h1:after {
+  display: block;
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: #cf4472;
+  margin: 20px auto;
 }
-#bio{
-  background-color:#242227;
-  min-height:10vh;
+.bottom-wrapper {
+  background-image: url("./img/footer-wrap.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
 }
-#bio p{
-  text-align:center;
-  color:white;
-  font-family: 'Noto Sans', sans-serif;
-  font-size:20px;
-  margin-top:50px;/* here */
-}
-
-
-
-

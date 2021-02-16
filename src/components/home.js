@@ -1,20 +1,28 @@
-import React, { useState, useEffect, useRef } from 'react'
-import Particles from "react-tsparticles"
-import optionParticles from "../data/optionParticles"
-import '../styles/home.css';
+import React, { useState, useContext, useEffect } from "react";
+import bgImage from "../img/bg.jpg";
+import { useInView } from "react-intersection-observer";
+import PopUpButton from "./popUpButton";
+import "../styles/home.css";
 
 const Home = () => {
-    
+  const { ref, inView, entry } = useInView({
+    initialInView: true,
+  });
+
   return (
-    <div id="home">
-      <Particles id="tsparticles" options={optionParticles} />
+    <div id="home" style={{ backgroundImage: `url(${bgImage})` }}>
       <div id="intro">
         <h3>Hi! I'm Ruslan</h3>
-        <p>I create experience</p>
+        <p ref={ref}>I craft web applications</p>
       </div>
-      
+      <PopUpButton
+        caller="home"
+        event={{
+          inView: inView,
+        }}
+      />
     </div>
-  )
-}
+  );
+};
 
 export default Home;

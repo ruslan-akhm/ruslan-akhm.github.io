@@ -1,0 +1,44 @@
+#easter {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0bebe;
+  opacity: 0.99;
+  align-items: center;
+  justify-content: center;
+}
+#egg {
+  margin-top: 5vh;
+  width: 85%;
+  height: 70%;
+  background-color: #242227;
+  position: relative;
+}
+#egg button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+#egg h2,
+#egg p {
+  margin: 20px auto;
+  color: white !important;
+  text-align: center;
+}
+#egg-joke {
+  height: 60%;
+}
+#egg-joke img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}

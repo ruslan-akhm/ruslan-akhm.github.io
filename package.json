@@ -10,8 +10,8 @@
     "aos": "^3.0.0-beta.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "react-tsparticles": "^1.17.7"
+    "react-intersection-observer": "^8.31.0",
+    "react-scripts": "^3.4.4"
   },
   "scripts": {
     "predeploy": "npm run build",

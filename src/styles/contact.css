@@ -1,76 +1,248 @@
-#contact{
-  background-color:#dae1ed;
-  padding:0 0 30px 0;
-  margin:0;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+#contact {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-#contact p, #contact button{
-  font-family: 'Noto Sans', sans-serif;
-  font-size:18px;
-  color:#242227;
-  text-align:center;
+.contact-box {
+  width: 50%;
+  min-width: 600px;
+  min-height: 80vh;
+  position: relative;
+  border-radius: 50% / 11%;
+  border: 2px solid white;
+  box-sizing: border-box;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5vh 0 5vh 0;
 }
-#contact p{
-  margin:10px;
+.contact-box h2 {
+  /* margin: 30px auto; */
 }
-#contact button{
-  height:30px;
-  background-color:#dae1ed;
-  border:1px solid #242227;
-  cursor:pointer;
+.contact-box p {
+  margin-top: -20px;
+  text-align: center;
+  color: #75727a;
 }
-#contact button:hover{
-  color:#dae1ed;
-  background-color:#242227;
+.contact-box::before {
+  content: "";
+  position: absolute;
+  top: 9%;
+  bottom: 9%;
+  right: -4.7%;
+  left: -4.7%;
+  border: 2px solid white;
+  box-sizing: content-box;
+  background: white;
+  border-radius: 5% / 50%;
+  z-index: -1;
 }
-#form{
-  display:none;
-  margin-top:40px;
-  min-width:500px;
-  width:80%;
+#close-button {
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+  color: red;
+  background-color: white;
+  width: 17px;
+  height: 19px;
+  font-weight: bold;
+  border-radius: 40%;
+  line-height: 16px;
+  font-size: 16px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-/*here*/
-.send-form{
-  display:grid;
-  grid-template-columns: 1fr 1fr;/*here*/
-  grid-template-rows:repeat(3, minmax(30px, auto-fit));/*here*/
-  grid-column-gap:10px;
-  grid-row-gap:20px;
+#close-button:focus {
+  border: 2px solid black;
 }
-.send-form input, .send-form textarea{
-  font-family: 'Noto Sans', sans-serif;
-  font-size:16px;
-  border:none;
-  border-bottom:2px solid #242227;
-  color:#242227;
-  outline:none;
-  min-height:28px;
-  background-color:transparent;
+
+.send-form {
+  /* border: 1px solid red; */
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, minmax(30px, auto-fit));
+  /* grid-column-gap: 10px; */
+  grid-row-gap: 10px;
+  /* border: turquoise 1px solid; */
+  width: 80%;
+  margin: 0px auto 15px;
+  max-height: fit-content;
 }
-.send-form textarea{
-  grid-area:2/1/3/3;
-  max-height:500px;
-  resize: vertical;
+.send-form input,
+.send-form textarea {
+  /* font-family: "Noto Sans", sans-serif; */
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #8e8a94;
+  color: #242227;
+  outline: none;
+  min-height: 16px;
+  background-color: transparent;
+  position: relative;
 }
-.send-form input:focus, .send-form textarea:focus{
-  border-bottom:2px solid #1ae2ea;
+.send-form textarea {
+  /* grid-area: 2/1/3/3; */
+  max-height: 400px;
+  resize: none;
 }
-.send-form #send{
-  grid-area:3/1/4/3;
-  width:200px;
-  margin:auto;
-  cursor:pointer;
+.send-form input:focus,
+.send-form textarea:focus {
+  border-bottom: 1px solid black;
 }
-.label-tags{
-  text-align:end;
-  font-family: 'Noto Sans', sans-serif;
-  font-size:16px;
-  align-self:start;
+.send-form input:focus + .floating-label,
+.send-form input:not(:focus):valid + .floating-label {
+  top: -50px;
+  font-size: 11px;
+  opacity: 1;
 }
-@media only screen and (max-width:800px){
-  #form{
-    width:90%;
-  } 
+.floating-label {
+  position: relative;
+  pointer-events: none;
+  left: 0px;
+  top: -30px;
+  font-size: 14px;
+  line-height: 14px;
+  transition: 0.2s ease all;
+  width: fit-content;
+}
+.send-form textarea:focus + .label-textarea,
+.send-form textarea:not(:focus):valid + .label-textarea {
+  top: -150px;
+  font-size: 11px;
+  opacity: 1;
+}
+.label-textarea {
+  position: relative;
+  pointer-events: none;
+  left: 0px;
+  top: -130px;
+  font-size: 14px;
+  transition: 0.2s ease all;
+  width: fit-content;
+  line-height: 14px;
+}
+.send-form #send {
+  width: 200px;
+  margin: 0px auto;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  transition: ease 0.2s;
+  background: rgb(74, 68, 138);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 68, 138, 1) 2%,
+    rgba(188, 101, 164, 1) 64%
+  );
+  -webkit-box-shadow: 0px 2px 12px #75727a;
+  box-shadow: 0px 2px 12px #75727a;
+}
+.send-form #send:hover {
+  opacity: 0.8;
+}
+#side-button {
+  /* display: none; */
+}
+#side-button:hover {
+  opacity: 0.8;
+}
+#side-button:focus {
+  border: 2px solid black;
+}
+.home-button {
+  position: absolute;
+  transform: translate(0vw, 10vh);
+  width: 140px;
+  height: 35px;
+  color: #59548c;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 25px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s ease;
+}
+.mail-button {
+  position: fixed;
+  z-index: 7;
+  top: 0vh;
+  transform: translate(44vw, 88vh);
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #cc393c;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0px 2px 12px #75727a;
+  box-shadow: 0px 2px 12px #75727a;
+  transition: 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 20vh;
+  }
+}
+@keyframes slideUp {
+  from {
+    margin-top: 20vh;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-box {
+    position: static;
+    width: 100%;
+    min-width: auto;
+    height: 100vh;
+    border-radius: 0;
+    border: none;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .contact-box::before {
+    display: none;
+  }
+  .contact-box p {
+    margin: 10px;
+  }
+  .send-form {
+    margin: 10px auto 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .mail-button {
+    transform: translate(40vw, 88vh);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mail-button {
+    transform: translate(38vw, 88vh);
+  }
 }

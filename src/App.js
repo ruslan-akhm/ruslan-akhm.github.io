@@ -1,33 +1,44 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Home from './components/home'
-import Bio from './components/bio'
-import Work from './components/work'
-import Skill from './components/skill'
-import Navbar from './components/navbar'
-import Contact from './components/contact'
-import Footer from './components/footer'
-import './App.css';
-import AOS from 'aos';
+import React, { useEffect, useContext } from "react";
+import Home from "./components/home";
+import Bio from "./components/bio";
+import Skills from "./components/skills";
+import Work from "./components/work";
+import Navbar from "./components/navbar";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
+import { Context } from "./context/context";
+import "./App.css";
 
 const App = () => {
-  
-    useEffect(()=>{
-      AOS.init({
-        once:true
-      });
-    },[])
+  const { isMobile, setIsMobile, isMenu, setIsMenu } = useContext(Context);
+
+  useEffect(() => {
+    if (window.innerWidth < 1000) {
+      setIsMobile(true);
+    }
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  }, []);
+
+  function resize() {
+    if (window.innerWidth < 1000) {
+      setIsMobile(true);
+    } else setIsMobile(false);
+  }
 
   return (
-     <div id="page">
-      <Home />
+    <div id="page">
       <Navbar />
-      <Bio />
+      <Home />
       <Work />
-      <Skill />
+      <Bio />
       <Contact />
-      <Footer />
+      <div className="bottom-wrapper">
+        <Skills />
+        <Footer />
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default App;

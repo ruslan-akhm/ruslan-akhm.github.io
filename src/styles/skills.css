@@ -1,0 +1,117 @@
+#skills {
+  padding-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 20vh;
+}
+#skills h1 {
+  color: #242227;
+  text-align: center;
+}
+#skills-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  width: fit-content;
+}
+.skills-box {
+  width: 14vw;
+  min-width: 180px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 14px #d7dbd8;
+  box-shadow: 0px 2px 14px #d7dbd8;
+}
+.skills-box:nth-child(1) {
+  grid-area: 3/1/5/2;
+}
+.skills-box:nth-child(2) {
+  grid-area: 2/2/4/3;
+}
+.skills-box:nth-child(3) {
+  grid-area: 4/2/6/3;
+}
+.skills-box:nth-child(4) {
+  grid-area: 1/3/3/4;
+}
+.skills-box:nth-child(5) {
+  grid-area: 3/3/5/4;
+}
+.skills-box:nth-child(6) {
+  grid-area: 5/3/7/4;
+}
+.skills-box:nth-child(7) {
+  grid-area: 2/4/4/5;
+}
+.skills-box:nth-child(8) {
+  grid-area: 4/4/6/5;
+}
+.skills-box:nth-child(9) {
+  grid-area: 3/5/5/6;
+}
+.skills-box p {
+  width: 100%;
+  height: 20%;
+  color: #242227;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+.skills-image {
+  height: 75%;
+  width: 100%;
+}
+.skills-image img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .skills-box {
+    min-width: 200px;
+  }
+  .skills-box:nth-child(1) {
+    grid-area: 6/2/8/3;
+  }
+  .skills-box:nth-child(9) {
+    grid-area: 6/4/8/5;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #skills-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    grid-row-gap: 15px;
+    width: 100%;
+  }
+  .skills-box {
+    width: 80%;
+    height: 120px;
+    margin: auto;
+    grid-area: auto !important;
+  }
+  .skills-box:nth-child(8n - 7) {
+    width: 60%;
+  }
+  .skills-box:nth-child(6n - 4) {
+    width: 65%;
+  }
+  .skills-box:nth-child(4n - 1) {
+    width: 70%;
+  }
+  .skills-box:nth-child(4),
+  .skills-box:nth-child(6) {
+    width: 75%;
+  }
+}
