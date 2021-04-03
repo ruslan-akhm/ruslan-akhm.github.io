@@ -50,7 +50,7 @@ const Footer = () => {
           src="https://cdn.glitch.com/91f0f8c0-742f-4b2e-8e89-678ce527a37c%2Fmethod-draw-image%20(1).svg?v=1600914611444"
           alt="hidden link"
         />
-        | 2020
+        | 2021
       </p>
       <Easter />
     </div>
